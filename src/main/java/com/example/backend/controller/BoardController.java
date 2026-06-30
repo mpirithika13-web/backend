@@ -9,7 +9,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/boards")
-@CrossOrigin("*")
+@CrossOrigin(origins = "*")
 public class BoardController {
     @Autowired
     private BoardService boardService;
