@@ -5,8 +5,7 @@ import com.example.backend.repository.UserRepository;
 import org.springframework.stereotype.Service;
 @Service
 public class AuthService {
-    @Autowired
-    
+    @Autowired 
     private UserRepository userRepository;
     public User signup(User user) {
      return userRepository.save(user);
