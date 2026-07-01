@@ -10,11 +10,9 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/auth")
 @CrossOrigin("*")
 public class AuthController {
-
     @Autowired
     private AuthService authService;
-
-    @PostMapping("/signup")
+   @PostMapping("/signup")
     public User signup( @RequestBody User user) {
     return  authService.signup(user);
     }
