@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class BoardService {
  @Autowired
- private BoardRepository boardRepository;
+private BoardRepository boardRepository;
     public List<Board> getBoards() {
         return boardRepository.findAll();
     }
@@ -35,9 +35,7 @@ public class BoardService {
     // public void deleteBoard(Long id) {
     //     boardRepository.deleteById(id);
     // }
-
-
-    public Board addBoard(Board board){
+        public Board addBoard(Board board){
         return boardRepository.save(board);
     }
     public void deleteBoard(Long id){
